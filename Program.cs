@@ -1,7 +1,4 @@
-﻿using System.Diagnostics;
-using System.Runtime.ConstrainedExecution;
-
-namespace ConsoleApp1
+﻿namespace ConsoleApp1
 {
     internal class Program
     {
@@ -27,28 +24,27 @@ namespace ConsoleApp1
 · Debes escribir una función para calcular el porcentaje en todos los casos que se requiere. La función devuelve el porcentaje.
 · Debes tener un solo método para mostrar los resultados. Al método se le envía el mensaje y el valor a mostrar.
 · Considerar los posibles mensajes para el usuario en caso de que no existan datos que cumplan los puntos a desarrollar.*/
-            int n,nr;
+            int n, nr;
             n = leer_datos("Ingrese la cantidad de números que desea generar");
-           
-              new Random();
+
+            new Random();
             Random rd = new Random();
-            if (n >= 10) 
-                for (int i = 0; i<n;i++)
+            if (n >= 10)
+                for (int i = 0; i < n; i++)
                 {
-                    nr = rd.Next();  
-                    Console.WriteLine(nr);
+                  
 
 
-                }    
-            else 
+                }
+            else
                 if (n <= 10)
-                for (int i = 0; i<n; i++)
+                for (int i = 0; i < n; i++)
                 {
                     Console.WriteLine("Ingrese su número");
                     nr = int.Parse(Console.ReadLine());
-                    Console.WriteLine(nr);
 
-                }    
+
+                }
 
         }
         public static int leer_datos(string dato)
